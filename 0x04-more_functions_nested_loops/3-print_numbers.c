@@ -1,12 +1,16 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_numbers - Print numbers between 0 to 9 incl
  */
-int main(void)
+void print_numbers(void)
 {
-print_numbers();
-return (0);
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		_putchar(i + '0');
+	}
+	_putchar('\n');
 }
