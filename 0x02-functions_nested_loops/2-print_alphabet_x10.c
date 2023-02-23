@@ -1,17 +1,25 @@
 #include "main.h"
 
 /**
- * add - adds two integers and return the result
- * @a: int to be added to b
- * @b: int to be addd to a
- * Return: sum of a and b
+ * print_alphabet_x10 - main program
+ *
+ * Return: 0
  */
 
-int add(int a, int b)
+void print_alphabet_x10(void)
 {
-	int c;
+	int i = 0;
+	char ch;
 
-	c = a + b;
-
-	return (c);
+	while (i < 10)
+	{
+		ch = 'a';
+		while (ch <= 'z')
+		{
+			_putchar(ch);
+			ch++;
+		}
+		_putchar('\n');
+		i++;
+	}
 }
